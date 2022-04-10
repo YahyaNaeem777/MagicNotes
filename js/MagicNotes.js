@@ -40,14 +40,14 @@ function shownotes() {
     }
     let html = "";
     noteObj.forEach(function(element, index) {
-        html += ` <div class="card my-3 mx-3" style="width: 18rem;">
+        html += ` <div class="card  col-md-5 col-lg-3 col-12 my-3 mx-3" >
         <div class="card-body">
-            <h5 class="card-title">Note ${index+1}</h5>
+            <h5 class="card-title">Note ${index + 1}</h5>
             <h3 class="card-title">${element.title}</h3>
             <p class="card-text">${element.txt}</p>
             <button href="#" class="btn btn-primary">Delete Note</button>
         </div>
-    </div>`
+    </div>`;
     });
     let noteEle = document.getElementById("notes");
     if (noteObj != null) {
